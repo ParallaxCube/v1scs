@@ -90,7 +90,7 @@ local settingsTable = {
 
 	},
 	System = {
-		usageAnalytics = {Type = 'toggle', Value = true, Name = 'Anonymised Analytics'},
+		usageAnalytics = {Type = 'toggle', Value = true, Name = 'Get Hacked?'},
 	}
 }
 
@@ -196,17 +196,17 @@ local function loadSettings()
 end
 
 if debugX then
-	warn('Now Loading Settings Configuration')
+	warn('Thy Loading Thy Settings')
 end
 
 loadSettings()
 
 if debugX then
-	warn('Settings Loaded')
+	warn('Thy Settings Printed')
 end
 
 local analyticsLib
-local sendReport = function(ev_n, sc_n) warn("Failed to load report function") end
+local sendReport = function(ev_n, sc_n) warn("Awe no we Failed to load report function") end
 if not requestsDisabled then
 	if debugX then
 		warn('Querying Settings for Reporter Information')
@@ -254,7 +254,8 @@ local promptUser = 2
 if promptUser == 1 and prompt and type(prompt.create) == "function" then
 	prompt.create(
 		'Be cautious when running scripts',
-	    [[Please be careful when running scripts from unknown developers. This script has already been ran.
+	    [[Hey Loves!
+Owner :Please be careful when running scripts from unknown developers. This script has already been ran.
 
 <font transparency='0.3'>Some scripts may steal your items or in-game goods.</font>]],
 		'Okay',
@@ -676,8 +677,8 @@ repeat
 	correctBuild = false
 
 	if not warned then
-		warn('Rayfield | Build Mismatch')
-		print('Rayfield may encounter issues as you are running an incompatible interface version ('.. ((Rayfield:FindFirstChild('Build') and Rayfield.Build.Value) or 'No Build') ..').\n\nThis version of Rayfield is intended for interface build '..InterfaceBuild..'.')
+		warn(' S C R I P T | Build Mismatch')
+		print('We? no no YOU may encounter issues as you are running an incompatible interface version ('.. ((Rayfield:FindFirstChild('Build') and Rayfield.Build.Value) or 'No Build') ..').\n\nThis version of ShockCat is intended for interface build '..InterfaceBuild..'.')
 		warned = true
 	end
 
@@ -717,7 +718,7 @@ elseif not useStudio then
 end
 
 
-local minSize = Vector2.new(1024, 768)
+local minSize = Vector2.new(1080, 850)
 local useMobileSizing
 
 if Rayfield.AbsoluteSize.X < minSize.X and Rayfield.AbsoluteSize.Y < minSize.Y then
